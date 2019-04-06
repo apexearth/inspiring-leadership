@@ -43,7 +43,7 @@ inspiring_leadership = {
 		fire_only_once = no
 		modifier = {
 			weekly_manpower = 1000
-			stability_weekly = -0.002
+			stability_weekly = -0.001
 		}
 		days_remove = 180
 		days_re_enable = 0

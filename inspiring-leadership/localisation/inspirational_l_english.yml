@@ -7,3 +7,6 @@
 
  promote_immigration:0 "Promote Immigration"
  promote_immigration_desc:0 "Promote immigration into the country using political power."
+
+ promote_research:0 "Promote Research"
+ promote_research_desc:0 "Promote research using political power and manpower."

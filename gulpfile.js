@@ -7,14 +7,16 @@ const sourceFiles = [
     'inspiring-leadership/**'
 ];
 
-const destination = path.join(process.env.HOMEPATH, '/Documents/Paradox Interactive/Hearts of Iron IV/mod/');
+const destination = path.join(process.env.HOMEDRIVE + process.env.HOMEPATH, '/Documents/Paradox Interactive/Hearts of Iron IV/mod/');
 
-for (let glob of sourceFiles) {
-    rimraf.sync(destination + glob)
-}
 
 module.exports = {
     copy: () => {
+        for (let glob of sourceFiles) {
+            const path = destination + glob
+            console.log('Removing:', path)
+            rimraf.sync(path)
+        }
         return gulp.src(sourceFiles, {base: './'})
             .pipe(gulp.dest(destination));
     }
