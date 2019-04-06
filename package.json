@@ -4,7 +4,9 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "copy": "gulp"
+    "copy": "npm run copy-mod-file && npm run copy-remaining",
+    "copy-mod-file": "copy inspiring-leadership.mod \"%HOMEDRIVE%%HOMEPATH%\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\"",
+    "copy-remaining": "xcopy inspiring-leadership \"%HOMEDRIVE%%HOMEPATH%\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\inspiring-leadership\\\" /E"
   },
   "private": true,
   "keywords": [
