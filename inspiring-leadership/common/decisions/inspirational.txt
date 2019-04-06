@@ -1,0 +1,89 @@
+inspiring_leadership = {
+
+	promote_family = {
+		icon = generic_political_discourse
+		available = {
+			has_war = no
+		}
+		visible = {
+			always = yes
+		}
+		remove_trigger = {
+			has_war = yes
+		}
+		fire_only_once = no
+		modifier = {
+			MONTHLY_POPULATION = 2
+		}
+		days_remove = 180
+		days_re_enable = 0
+		cost = 25
+		complete_effect = {
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_manpower < 50000
+			}
+		}
+	}
+
+	promote_immigration = {
+		icon = generic_political_discourse
+		available = {
+			has_war = no
+		}
+		visible = {
+			always = yes
+		}
+		remove_trigger = {
+			has_war = yes
+		}
+		fire_only_once = no
+		modifier = {
+			weekly_manpower = 1000
+			stability_weekly = -0.002
+		}
+		days_remove = 180
+		days_re_enable = 0
+		cost = 25
+		complete_effect = {
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_manpower < 50000
+			}
+		}
+	}
+
+	promote_research = {
+		icon = generic_political_discourse
+		available = {
+			always = yes
+			has_manpower > 10000
+		}
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		modifier = {
+			research_speed_factor = 0.1
+		}
+		days_remove = 180
+		days_re_enable = 0
+		cost = 50
+		complete_effect = {
+			add_manpower = -10000
+		}
+		remove_effect = {
+		   add_manpower = 10000
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+}

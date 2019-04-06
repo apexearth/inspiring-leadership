@@ -1,0 +1,19 @@
+{
+  "name": "inspiring-leadership",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "copy": "gulp"
+  },
+  "private": true,
+  "keywords": [
+    "hoi4",
+    "mod"
+  ],
+  "author": "apexearth@gmail.com",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "rimraf": "^2.6.3"
+  }
+}

@@ -1,0 +1,7 @@
+inspiring_leadership = {
+	icon = generic_construction
+	picture = GFX_decision_generic_special_project
+	allowed = {
+		always = yes
+	}
+}
